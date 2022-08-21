@@ -1,0 +1,12 @@
+/* font-family: 'Patrick Hand', cursive;
+font-family: 'Philosopher', sans-serif; */
+header{
+    height: 350px;
+}
+header h1{
+    color: coral;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    
+}
