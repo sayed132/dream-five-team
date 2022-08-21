@@ -18,16 +18,172 @@
     <link rel="stylesheet" href="styles/style.css">
  </head>
  <body>
-    <header class="bg-dark  d-flex align-items-center text-center">
+    <header class=" d-flex align-items-center text-center">
         <section class="container d-flex justify-content-center ">
             <div class="">
                 <h1>Select Your Best Five</h1>
-            <p class="text-white text-muted mt-3">
+            <p class="text-white mt-3">
                 Wow your most favorite game of cricket is here Top 5 The Dream Five Game <br> So what's the delay now select your favorite top 5 players and jump on The Dream Five
             </p>
             </div>
         </section>
     </header>
+
+    <main class="bg-dark pb-5">
+        <section class="container pb-5 pt-5">
+            <div class="d-flex gap-4">
+                <div class="col-9">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col ">
+                          <div class="card h-100">
+                            <img src="img/afridi.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                              <h5 class="card-title">Shahid Afridi</h5>
+                              <p class="card-text">Pakistan National Team</p>
+                              <button class="btn btn-primary w-75">Select</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="img/mashrafee.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Mashrafe Bin MOrtaza</h5>
+                              <p class="card-text">Bangladesh Captain</p>
+                              <button class="btn btn-primary w-75">Select</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="img/dhoni.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">M/S Dhoni</h5>
+                              <p class="card-text">Inda Captain</p>
+                              <button class="btn btn-primary w-75">Select</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="img/Mitchell-Starc.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Mitchell Starc</h5>
+                              <p class="card-text">Fast Bowler</p>
+                              <button class="btn btn-primary w-75">Select</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="img/mustamiz.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Mustafizur Rahman</h5>
+                              <p class="card-text">M Fast Bowler (cutter)</p>
+                              <button class="btn btn-primary w-75">Select</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="img/shakib.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Shakib-Al-Hasan</h5>
+                              <p class="card-text">No. 1 All Rounder</p>
+                              <button class="btn btn-primary w-75">Select</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="img/gayle.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">chris gayle</h5>
+                              <p class="card-text">The Universe Boosss</p>
+                              <button class="btn btn-primary w-75">Select</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="img/warnar.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">David Warner</h5>
+                              <p class="card-text">Clasical Batsman</p>
+                              <button class="btn btn-primary w-75">Select</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="img/tamim.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Tamim Iqbal</h5>
+                              <p class="card-text">The Tigers King</p>
+                              <button class="btn btn-primary w-75">Select</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="card " style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Selected - V</h5>
+                          <ol id="select-output" class="mt-5">
+                            <li></li><br>
+                            <li></li><br>
+                            <li></li><br>
+                            <li></li><br>
+                            <li></li><br>
+                          </ol>
+                      </div>
+                    
+                </div>
+                <div class="card mt-4 " style="width: 18rem;">
+                  <div class="card-body">
+                      <h5 class="card-title mb-4">Budget</h5>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <h6 class="">Per Player</h6>
+                        <input class="w-50 ms-5" type="text">
+                      </div>
+
+                    <button class="btn btn-primary my-4 w-75 mx-auto">Calculator</button>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h6 class="me-5">Player Expenses</h6>
+                        <h2 class="ms-3">$00</h2>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h6 class="">Maneger</h6>
+                        <input class="w-50 ms-5" type="text">
+                      </div>
+                      <br>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <h6 class="">Coach</h6>
+                        <input class="w-50 ms-5" type="text">
+                      </div>
+
+                      <button class="btn btn-primary my-4 w-75 mx-auto">Calculator Total</button>
+
+                      <div class="d-flex justify-content-between">
+                        <h4>Total</h4>
+                        <h3>$00</h3>
+                      </div>
+                  </div>
+                    
+                  </div>
+            </div>
+        </section>
+     
+    </main>
+    
+    <footer class="text-white bg-dark p-3">
+        <hr>
+        <section class="container text-center">
+            <p>Copyright @ 2022 All Rights Reserved</p>
+        </section>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="script/utilitis.js"></script>
