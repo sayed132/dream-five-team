@@ -20,3 +20,11 @@ header p{
     color: white;
     text-align: center;
 }
+
+.heading h5{
+    font-weight: bold;
+}
+.heading p{
+    color: bisque;
+    font-family: 'Patrick Hand', cursive;
+}

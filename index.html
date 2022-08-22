@@ -16,24 +16,29 @@
 
     <!-- css file link  -->
     <link rel="stylesheet" href="styles/style.css">
+
  </head>
  <body>
+  <!-- header section strats -->
     <header class=" d-flex align-items-center text-center">
         <section class="container d-flex justify-content-center ">
             <div class="">
-                <h1>Select Your Best Five</h1>
+                <h1>Select Your Dream Five Team</h1>
             <p class="text-white mt-3">
                 Wow your most favorite game of cricket is here Top 5 The Dream Five Game <br> So what's the delay now select your favorite top 5 players and jump on The Dream Five
             </p>
             </div>
         </section>
     </header>
+    <!-- header section ends -->
 
+    <!-- main section starts  -->
     <main class="bg-dark pb-5">
         <section class="container pb-5 pt-5">
             <div  id="player-container" class="d-md-flex gap-4">
+              <!-- player card list starts  -->
                 <div  class=" col-12 col-md-9 col-lg-9">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 heading">
                         <div class="col ">
                           <div class="card h-100">
                             <img src="img/afridi.jpg" class="card-img-top" alt="...">
@@ -48,7 +53,7 @@
                           <div class="card h-100">
                             <img src="img/mashrafee.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Mashrafe Bin MOrtaza</h5>
+                              <h5 class="card-title">Mashrafe Bin Mortaza</h5>
                               <p class="card-text">Bangladesh Captain</p>
                               <button class="btn btn-primary w-75">Select</button>
                             </div>
@@ -126,7 +131,9 @@
                         </div>
                       </div>
                 </div>
+                <!-- player card list ends  -->
 
+                <!-- calculator and top five select list start  -->
                 <div class="col-12 col-md-3 col-lg-3 mt-4 mt-md-0">
                     <div class="card " style="height: 30%;">
                         <div class="card-body">
@@ -145,7 +152,7 @@
                         <input id="per-player" class="w-50 ms-5" type="text">
                       </div>
 
-                    <button id="calculator" class="btn btn-primary my-4 w-75 mx-auto">Calculator</button>
+                    <button id="calculator" class="btn btn-primary fw-bold my-4 w-100 mx-auto">Calculator</button>
                     <div class="d-flex justify-content-center align-items-center">
                         <h6 class="me-5">Player Expenses</h6>
                         <h2 class="ms-3">$<span id="total-player-expense" >00</span></h2>
@@ -161,7 +168,7 @@
                         <input id="coach-fee" class="w-50 ms-5" type="text">
                       </div>
 
-                      <button id="calculat-total" class="btn btn-primary my-4 w-75 mx-auto">Calculator Total</button>
+                      <button id="calculat-total" class="btn btn-primary fw-bold my-4 w-100 mx-auto">Calculator Total</button>
 
                       <div class="d-flex justify-content-between">
                         <h4>Total</h4>
@@ -171,10 +178,12 @@
                     
                   </div>
                 </div>
+                <!-- calculator and top five select list ends  -->
             </div>
         </section>
      
     </main>
+    <!-- main section ends  -->
     
     <footer class="text-white bg-dark p-3">
         <hr>
