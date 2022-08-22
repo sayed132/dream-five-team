@@ -31,16 +31,16 @@
 
     <main class="bg-dark pb-5">
         <section class="container pb-5 pt-5">
-            <div class="d-md-flex gap-4">
-                <div id="plears-seloctor" class=" col-12 col-md-9 col-lg-9">
-                    <div  class="row row-cols-1 row-cols-md-3 g-4">
+            <div  id="player-container" class="d-md-flex gap-4">
+                <div  class=" col-12 col-md-9 col-lg-9">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col ">
                           <div class="card h-100">
                             <img src="img/afridi.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center text-white">
-                              <h5 id="p1-text" class="card-title">Shahid Afridi</h5>
+                              <h5 class="card-title">Shahid Afridi</h5>
                               <p class="card-text">Pakistan National Team</p>
-                              <button id="pl-1" class="btn btn-primary w-75">Select</button>
+                              <button class="btn btn-primary w-75">Select</button>
                             </div>
                           </div>
                         </div>
@@ -127,17 +127,17 @@
                       </div>
                 </div>
 
-                <div class="col-12 col-md-3 col-lg-3">
-                    <div class="card " style="width: 18rem;">
+                <div class="col-12 col-md-3 col-lg-3 mt-4 mt-md-0">
+                    <div class="card " style="height: 30%;">
                         <div class="card-body">
                           <h5 class="card-title">Selected - V</h5>
-                          <ol id="select" class="mt-5">
+                          <ol id="players" class="mt-5">
                             
                           </ol>
-                      </div>
+                        </div>
                     
-                </div>
-                <div class="card mt-4 " style="width: 18rem;">
+                    </div>
+                <div class="card mt-4">
                   <div class="card-body">
                       <h5 class="card-title mb-4">Budget</h5>
                       <div class="d-flex justify-content-center align-items-center">
@@ -151,7 +151,7 @@
                         <h2 class="ms-3">$<span id="total-player-expense" >00</span></h2>
                     </div>
 
-                    <div class="d-flex justify-content-center align-items-center">
+                      <div class="d-flex justify-content-center align-items-center">
                         <h6 class="">Maneger</h6>
                         <input id="maneger-fee" class="w-50 ms-5" type="text">
                       </div>
@@ -167,9 +167,10 @@
                         <h4>Total</h4>
                         <h3>$<span id="subtotal-ammount">00</span></h3>
                       </div>
-                  </div>
+                    </div>
                     
                   </div>
+                </div>
             </div>
         </section>
      
