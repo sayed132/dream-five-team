@@ -2,7 +2,9 @@ function perPlayerCalc(){
     const perPlayerExpens = document.getElementById('per-player');
     const perPlayerExpensString = perPlayerExpens.value;
     const perPlayer = parseInt(perPlayerExpensString)
-    const totalPlayer = perPlayer * 5;
+
+    const playerCount = document.querySelectorAll("#players li");
+    const totalPlayer = perPlayer * playerCount.length;
     perPlayerExpens.value = '';
 
     const totalPlayerExpens = document.getElementById('total-player-expense');
@@ -46,6 +48,6 @@ document.getElementById('calculat-total').addEventListener('click', function(){
     const totalTeamExpens = document.getElementById('subtotal-ammount');
     const totalTeamExpensString = totalTeamExpens.innerText;
     const previosTotalTeamExpens = parseInt(totalTeamExpensString);
-    const newTotalTeamExpens = previosTotalTeamExpens + totalElements;
-    totalTeamExpens.innerText = newTotalTeamExpens
+    const newTotalTeamExpens = previosTotalTeamExpens;
+    totalTeamExpens.innerText = totalElements
 })
