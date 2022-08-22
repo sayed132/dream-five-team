@@ -31,16 +31,16 @@
 
     <main class="bg-dark pb-5">
         <section class="container pb-5 pt-5">
-            <div class="d-flex gap-4">
-                <div class="col-9">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="d-md-flex gap-4">
+                <div id="plears-seloctor" class=" col-12 col-md-9 col-lg-9">
+                    <div  class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col ">
                           <div class="card h-100">
                             <img src="img/afridi.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center text-white">
-                              <h5 class="card-title">Shahid Afridi</h5>
+                              <h5 id="p1-text" class="card-title">Shahid Afridi</h5>
                               <p class="card-text">Pakistan National Team</p>
-                              <button class="btn btn-primary w-75">Select</button>
+                              <button id="pl-1" class="btn btn-primary w-75">Select</button>
                             </div>
                           </div>
                         </div>
@@ -126,16 +126,13 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3 ">
+
+                <div class="col-12 col-md-3 col-lg-3">
                     <div class="card " style="width: 18rem;">
                         <div class="card-body">
                           <h5 class="card-title">Selected - V</h5>
-                          <ol id="select-output" class="mt-5">
-                            <li></li><br>
-                            <li></li><br>
-                            <li></li><br>
-                            <li></li><br>
-                            <li></li><br>
+                          <ol id="select" class="mt-5">
+                            
                           </ol>
                       </div>
                     
@@ -145,30 +142,30 @@
                       <h5 class="card-title mb-4">Budget</h5>
                       <div class="d-flex justify-content-center align-items-center">
                         <h6 class="">Per Player</h6>
-                        <input class="w-50 ms-5" type="text">
+                        <input id="per-player" class="w-50 ms-5" type="text">
                       </div>
 
-                    <button class="btn btn-primary my-4 w-75 mx-auto">Calculator</button>
+                    <button id="calculator" class="btn btn-primary my-4 w-75 mx-auto">Calculator</button>
                     <div class="d-flex justify-content-center align-items-center">
                         <h6 class="me-5">Player Expenses</h6>
-                        <h2 class="ms-3">$00</h2>
+                        <h2 class="ms-3">$<span id="total-player-expense" >00</span></h2>
                     </div>
 
                     <div class="d-flex justify-content-center align-items-center">
                         <h6 class="">Maneger</h6>
-                        <input class="w-50 ms-5" type="text">
+                        <input id="maneger-fee" class="w-50 ms-5" type="text">
                       </div>
                       <br>
                       <div class="d-flex justify-content-center align-items-center">
                         <h6 class="">Coach</h6>
-                        <input class="w-50 ms-5" type="text">
+                        <input id="coach-fee" class="w-50 ms-5" type="text">
                       </div>
 
-                      <button class="btn btn-primary my-4 w-75 mx-auto">Calculator Total</button>
+                      <button id="calculat-total" class="btn btn-primary my-4 w-75 mx-auto">Calculator Total</button>
 
                       <div class="d-flex justify-content-between">
                         <h4>Total</h4>
-                        <h3>$00</h3>
+                        <h3>$<span id="subtotal-ammount">00</span></h3>
                       </div>
                   </div>
                     
@@ -187,5 +184,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="script/utilitis.js"></script>
+    <script src="script/select.js"></script>
  </body>
  </html>
